@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cera's - Premium Ceramic Tiles</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #e74c3c;
+            --light-color: #24aacb;
+            --dark-color: #34495e;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        
+        /* Header Styles */
+        .navbar-brand img {
+            height: 50px;
+        }
+        
+        .navbar {
+            background-color: rgb(225, 217, 217);
+            box-shadow: 0 2px 10px rgba(196, 187, 187, 0.1);
+            text-shadow: yellow;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1584354273341-3eb96574e5be?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb29yJTIwdGlsZXN8ZW58MHx8MHx8fDA%3D&fm=jpg&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: rgb(23, 22, 22);
+            padding: 100px 0;
+            margin-bottom: 40px;
+        }
+        
+        /* Category Cards */
+        .category-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* Featured Products */
+        .featured-product {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .featured-product:hover {
+            transform: scale(1.02);
+        }
+        
+        .featured-product img {
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        /* Expert Corner */
+        .expert-corner {
+            background-color: var(--light-color);
+            padding: 60px 0;
+            margin: 40px 0;
+        }
+        
+        .expert-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            height: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-links h5 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .social-icons {
+            font-size: 24px;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+        }
+        
+        /* Product Comparison */
+        .compare-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        /* Contact Page */
+        #map {
+            height: 400px;
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .contact-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="      ">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/360_F_851583981_QpHvn0Ro4b84v6apNdadxsllI74L7PJz.jpg" alt="Cera's Logo">
+            </a>
+            <h1>zs Tiles</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="wallTilesDropdown" role="button" data-bs-toggle="dropdown">
+                            Wall Tiles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="wallTilesDropdown">
+                            <li><a class="dropdown-item" href="/wall web/bathroom.html">Bathroom Wall Tiles</a></li>
+                            <li><a class="dropdown-item" href="/wall web/kitchen.html">Kitchen Wall Tiles</a></li>
+                            <li><a class="dropdown-item" href="/wall web/outdoor.html">Outdoor Wall Tiles</a></li>
+                            <li><a class="dropdown-item" href="/wall web/Living room.html">Living Room Tiles</a></li>
+                            <li><a class="dropdown-item" href="/wall web/Bedroom.html">Bedroom Tiles</a></li>
+                            <li><a class="dropdown-item" href="/wall web/Commercial spaces tiles.html">Commercial Spaces Tiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/flore web" id="floorTilesDropdown" role="button" data-bs-toggle="dropdown">
+                            Floor Tiles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="floorTilesDropdown">
+                            <li><a class="dropdown-item" href="/flore web/batroom.html">Bathroom Floor Tiles</a></li>
+                            <li><a class="dropdown-item" href="/flore web/Kitchen floor tiles.html">Kitchen Floor Tiles</a></li>
+                            <li><a class="dropdown-item" href="/flore web/outdor.html">Outdoor Floor Tiles</a></li>
+                            <li><a class="dropdown-item" href="/flore web/Living room.html">Living Room Tiles</a></li>
+                            <li><a class="dropdown-item" href="/flore web/bedroom.html">Bedroom Tiles</a></li>
+                            <li><a class="dropdown-item" href="/flore web/commercial.html">Commercial Spaces Tiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="specialTilesDropdown" role="button" data-bs-toggle="dropdown">
+                            Special Tiles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="specialTilesDropdown">
+                            <li><a class="dropdown-item" href="/special tiles/germ free.html">Germ Free Tiles</a></li>
+                            <li><a class="dropdown-item" href="/special tiles/TCA.html">Tactile (TAC) Tiles</a></li>
+                            <li><a class="dropdown-item" href="/special tiles/Anti static.html">Anti-Static Tiles</a></li>
+                            <li><a class="dropdown-item" href="/special tiles/Cool roof .html">Cool Roof Tiles</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalogue">E-Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#expert-corner">Expert Corner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Transform Your Space With Cera's Tiles</h1>
+            <p class="lead mb-4">Premium quality tiles for every room and every style</p>
+            <a href="#expert-corner" class="btn btn-danger btn-lg">Explore Collection</a>
+        </div>
+    </section>
+
+    <!-- Main Categories -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Our Tile Categories</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe78sqJQ0hb9xY1KPPv1ntLxGdJS2jOa1IeQ&s" class="card-img-top" alt="Wall Tiles">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Wall Tiles</h5>
+                        <p class="card-text">Beautiful wall tiles for bathroom, kitchen, living room and more.</p>
+                        <a href="/wall web/Living room.html" class="btn btn-outline-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://images.unsplash.com/photo-1706629503577-0f7da8b30aca?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Zmxvb3IlMjB0aWxlc3xlbnwwfHwwfHx8MA%3D%3D&w=600" class="card-img-top" alt="Floor Tiles">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Floor Tiles</h5>
+                        <p class="card-text">Durable and stylish floor tiles for any room in your home.</p>
+                        <a href="/flore web/commercial.html" class="btn btn-outline-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://media.istockphoto.com/id/1186291378/photo/installing-a-large-ceramic-tile.jpg?s=612x612&w=0&k=20&c=8W0f8n9oanH_PM-1BDmUtPymrH1ttdjzD8ANQcF9zNI=" class="card-img-top" alt="Special Tiles">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Special Tiles</h5>
+                        <p class="card-text">Innovative tiles with special features like anti-bacterial, tactile and more.</p>
+                        <a href="/special tiles/Cool roof .html" class="btn btn-outline-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="featured-product">
+                    <img src="https://media.istockphoto.com/id/185309581/photo/white-tiles-in-bathroom.jpg?s=612x612&w=0&k=20&c=VYWjgUpEPhPtMdPepsavNhyrFTcmAVFuxQx9eAAklzs=" alt="Glazed Vitrified Tile" class="img-fluid mb-3">
+                    <h5>Azure Blue Glazed Vitrified</h5>
+                    <p class="small text-muted">Bathroom Wall Tiles</p>
+                    <p>Premium glazed vitrified tiles with water-resistant finish.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/detal webs/detalwaltiles.html" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <button class="btn btn-sm btn-primary">Compare</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="featured-product">
+                    <img src="https://images.unsplash.com/photo-1547414857-c9f61632b250?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZsb29yJTIwdGlsZXN8ZW58MHx8MHx8fDA%3D&w=600" alt="Ceramic Tile" class="img-fluid mb-3">
+                    <h5>Rustic Beige Ceramic</h5>
+                    <p class="small text-muted">Living Room Floor Tiles</p>
+                    <p>Classic ceramic tiles with natural stone finish.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/detal webs/livingfloortilesdetal.html" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <button class="btn btn-sm btn-primary">Compare</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="featured-product">
+                    <img src="https://media.istockphoto.com/id/2184523520/photo/laying-marble-floor-tiles-with-ceramic-adhesive-ridges.jpg?s=612x612&w=0&k=20&c=fOb-DB4EFB_rV0KzCgO8q1c5I_IG8LdJrIJFKlj5X_Q=" alt="Polished Vitrified Tile" class="img-fluid mb-3">
+                    <h5>Marble White Polished Vitrified</h5>
+                    <p class="small text-muted">Bedroom Floor Tiles</p>
+                    <p>Elegant polished vitrified tiles with marble effect.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/detal webs/bedroom detal.html" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <button class="btn btn-sm btn-primary">Compare</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="featured-product">
+                    <img src="https://media.istockphoto.com/id/2152221191/photo/ceramic-tiles-on-the-wall-and-floor-in-the-install-process-3d-illustration.jpg?s=612x612&w=0&k=20&c=OUg0deJNOrgtR44S067Lzab8eYIhq-CywynzUUmn6S0=" alt="Anti-Bacterial Tile" class="img-fluid mb-3">
+                    <h5>GermFree Plus</h5>
+                    <p class="small text-muted">Special Tiles - Anti-Bacterial</p>
+                    <p>Advanced tiles with anti-bacterial and anti-viral properties.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="/detal webs/specildetal.html" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        <button class="btn btn-sm btn-primary">Compare</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Catalogue Section -->
+    <section id="catalogue" class="container mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Download Our E-Catalogue</h2>
+                <p>Get comprehensive details about our entire range of tiles including:</p>
+                <ul>
+                    <li>Glazed vitrified tiles</li>
+                    <li>Ceramic tiles</li>
+                    <li>Polished vitrified tiles</li>
+                </ul>
+                <p>Our catalogue contains detailed specifications, available sizes, colors, and finishes.</p>
+                <a href="/index.html" class="btn btn-primary me-2">Download PDF</a>
+                <a href="https://www.stile.com.pk/ecatalogs/" class="btn btn-outline-secondary">View Online</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1642678751244-296d18c4cab3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGZsb29yJTIwdGlsZXN8ZW58MHx8MHx8fDA%3D&w=600" alt="E-Catalogue Preview" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Comparison Section -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Compare Products</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered compare-table">
+                <thead>
+                    <tr>
+                        <th>Features</th>
+                        <th>Glazed Vitrified</th>
+                        <th>Ceramic</th>
+                        <th>Polished Vitrified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Water Absorption</td>
+                        <td>Low (0.5%)</td>
+                        <td>High (3-7%)</td>
+                        <td>Very Low (0.1%)</td>
+                    </tr>
+                    <tr>
+                        <td>Durability</td>
+                        <td>High</td>
+                        <td>Medium</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>Maintenance</td>
+                        <td>Easy</td>
+                        <td>Moderate</td>
+                        <td>Very Easy</td>
+                    </tr>
+                    <tr>
+                        <td>Suitable For</td>
+                        <td>Walls & Floors</td>
+                        <td>Primarily Walls</td>
+                        <td>Primarily Floors</td>
+                    </tr>
+                    <tr>
+                        <td>Price Range</td>
+                        <td>Medium-High</td>
+                        <td>Low-Medium</td>
+                        <td>High</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Expert Corner -->
+    <section id="expert-corner" class="expert-corner">
+        <div class="container">
+            <h2 class="text-center mb-5">Expert Corner</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="expert-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-blog fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Blogs</h4>
+                        <p>Read our latest blogs on tile trends, installation tips, and maintenance guides.</p>
+                        <div class="text-center">
+                            <a href="/vidio/blog.html" class="btn btn-outline-primary">Read Blogs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="expert-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-book fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Tile Guide</h4>
+                        <p>Comprehensive guides to help you choose the right tiles for your space.</p>
+                        <div class="text-center">
+                            <a href="https://www.youtube.com/watch?v=RCnDuPOE680" class="btn btn-outline-primary">View Guides</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="expert-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-video fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Educational Videos</h4>
+                        <p>Watch our videos on installation techniques, design ideas, and more.</p>
+                        <div class="text-center">
+                            <a href="https://youtu.be/7h3VOJafWY8" class="btn btn-outline-primary">Watch Videos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="expert-card">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-calculator fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="text-center">Tile Calculator</h4>
+                        <p>Calculate how many tiles you'll need for your project with our handy tool.</p>
+                        <div class="text-center">
+                            <a href="/vidio/tile caltor.html" class="btn btn-outline-primary">Use Calculator</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Contact Us Section -->
+    <section id="contact" class="container mb-5">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="contact-info">
+                    <h4 class="mb-4">Get In Touch</h4>
+                    <div class="mb-3">
+                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                        <span>123 Ceramic Street, Tile City, TC 12345</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-phone me-2 text-primary"></i>
+                        <span>0320-2649603</span>
+                    </div>
+                    <div class="mb-3">
+                        <i class="fas fa-envelope me-2 text-primary"></i>
+                        <a href="mailto:info@cerastiles.com">info@cerastiles.com</a>
+                    </div>
+                    <h5 class="mt-4 mb-3">Business Hours</h5>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <!-- Map with actual image instead of placeholder -->
+                <div id="map">
+                    <img src="https://media.istockphoto.com/id/1133604763/photo/modern-bathroom.jpg?s=612x612&w=0&k=20&c=U4P402afSB_Q9ZTCx-3Q0o9EJinN0uWrGkoTMMwSONI=" alt="Location Map" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="catalogue">E-Catalogue</a></li>
+                        <li><a href="expert-corner">Expert Corner</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-links">
+                    <h5>Wall Tiles</h5>
+                    <ul>
+                        <li><a href="/wall web/bathroom.html">Bathroom Wall Tiles</a></li>
+                        <li><a href="/wall web/kitchen.html">Kitchen Wall Tiles</a></li>
+                        <li><a href="/wall web/Living room.html">Living Room Tiles</a></li>
+                        <li><a href="/wall web/Bedroom.html">Bedroom Tiles</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-links">
+                    <h5>Floor Tiles</h5>
+                    <ul>
+                        <li><a href="/flore web/batroom.html">Bathroom Floor Tiles</a></li>
+                        <li><a href="/flore web/Kitchen floor tiles.html">Kitchen Floor Tiles</a></li>
+                        <li><a href="/flore web/Living room.html">Living Room Tiles</a></li>
+                        <li><a href="/flore web/commercial.html">Commercial Tiles</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 footer-links">
+                    <h5>Special Tiles</h5>
+                    <ul>
+                        <li><a href="/special tiles/germ free.html">Germ Free Tiles</a></li>
+                        <li><a href="/special tiles/TCA.html">Tactile (TAC) Tiles</a></li>
+                        <li><a href="/special tiles/Anti static.html">Anti-Static Tiles</a></li>
+                        <li><a href="/special tiles/Cool roof .html">Cool Roof Tiles</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025  zs Tiles. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white me-3">Privacy Policy</a>
+                        <a href="#" class="text-white me-3">Terms of Service</a>
+                        <a href="#" class="text-white">Sitemap</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!-- JavaScript for Bootstrap and Google Maps API -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Geolocation JavaScript would go here -->
+    <script>
+        // This is where you would implement the Google Maps API
+        // Example placeholder code:
+        function initMap() {
+            // Create map centered at the company location
+            const companyLocation = { lat: 40.7128, lng: -74.0060 }; // Example coordinates
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: companyLocation,
+            });
+            // Add marker for company location
+            const marker = new google.maps.Marker({
+                position: companyLocation,
+                map: map,
+                title: "Cera's Tiles Headquarters",
+            });
+        }
+        
+        // Function to compare products
+        function compareProducts() {
+            // Product comparison functionality would be implemented here
+            console.log("Product comparison functionality");
+        }
+        
+        // Email client functionality
+        document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                // This will invoke the local mail client
+                console.log("Email client invoked");
+            });
+        });
+    </script>
+</body>
+</html>
